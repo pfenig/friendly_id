@@ -38,7 +38,8 @@ module FriendlyId
     end
 
     module Model
-      attr_accessor :slug
+      #In rails 3.2 this is overriding the association
+      #attr_accessor :slug
 
       def find_slug
         raise NotImplementedError
